@@ -14,7 +14,7 @@ void incrementCounter() {
 
   // Clear last count and increment by 1
   gfx->setTextColor(RGB565_BLACK);
-  gfx->setCursor(205, 55);
+  gfx->setCursor(185, 55);
   gfx->println(button_presses);
   button_presses = button_presses + 1;
 } //incrementCounter end
@@ -26,7 +26,7 @@ void decrementCounter() {
 
   //  Clear last count and decrement by 1
   gfx->setTextColor(RGB565_BLACK);
-  gfx->setCursor(205, 55);
+  gfx->setCursor(185, 55);
   gfx->println(button_presses);
   // decrement only if count greater than 0
   if (button_presses != 0){
@@ -113,10 +113,10 @@ void loop() {
     gfx->setCursor(10, 30);
     gfx->println("Please press button,");
     gfx->setCursor(10, 55);
-    gfx->println("current presses:");
+    gfx->println("current count:");
 
     gfx->setTextColor(RGB565_GREEN);
-    gfx->setCursor(205, 55);
+    gfx->setCursor(185, 55);
     gfx->println(button_presses);
   }
 }
