@@ -82,25 +82,3 @@ Arduino_GFX *gfx = new Arduino_ST7789(
     35, //col offset 2
     0); //row offset 2
 //----------Display definitions----------
-
-
-
-/*
-// UNUSED TODO: get application to Light-Sleep
-#include <esp_task_wdt.h>
-#include <esp_system.h> // For ESP.restart()
-
-// UNUSED
-#include <LowPower.h>
-
-
-  //----------Watchdog timer setup----------
-  esp_task_wdt_config_t wdt_config = {
-    .timeout_ms = 0,
-    .idle_core_mask = (1 << cores) - 1,
-    .trigger_panic = false
-  };
-  esp_task_wdt_init();
-  esp_task_wdt_add(*buttonRightInterrupt(), buttonLeftInterrupt()*);
-  //----------Watchdog timer setup----------
-  */
